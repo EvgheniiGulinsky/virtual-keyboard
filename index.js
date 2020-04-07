@@ -119,7 +119,7 @@ keys.forEach((element,index) => {for (const key in element) {
             let keyNumber = + key
             button.classList.add("btn" + keyNumber)
             button.dataset.row = index
-            button.innerHTML = element[key][j]
+            button.innerHTML = element[key][+j]
             button.id =  keyNumber
             button.addEventListener("click",pressBtn)
             document.getElementsByClassName(index)[0].appendChild(button)
@@ -296,11 +296,11 @@ arrDef.forEach(element =>
           langSwitch(
             () => {if(j==0 || j==1){
                 j=j+2
-                document.querySelectorAll(".btn__default").forEach(element=>{element.innerHTML = keys[element.dataset.row]["+" + element.id][j]})
+                document.querySelectorAll(".btn__default").forEach(element=>{element.innerHTML = keys[element.dataset.row]["+" + element.id][+j]})
                 localStorage.setItem("languageIterator", j.toString())}
             else if (j==2 || j==3) {
                 j=j-2
-                document.querySelectorAll(".btn__default").forEach(element=>{element.innerHTML = keys[element.dataset.row]["+" + element.id][j]})
+                document.querySelectorAll(".btn__default").forEach(element=>{element.innerHTML = keys[element.dataset.row]["+" + element.id][+j]})
                 localStorage.setItem("languageIterator", j.toString())
             }
             },
