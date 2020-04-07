@@ -1,0 +1,97 @@
+*{
+    margin: auto;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 5% 5%;
+}
+.textarea{
+    width: 82%;
+    height: 200px;
+}
+.keyboard{
+    background: black;
+}
+.btn__command{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin:5px 5px;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}
+.btn__default{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin:5px 5px;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}
+.keyboard__row{
+    display:flex;  
+}
+.pressed{
+    animation: 0.1s btnHighlight forwards;
+}
+
+@keyframes btnHighlight{
+    0%{
+        background: grey;
+    }
+
+    100%{
+        background: green;
+    }
+}
+
+.btn__command:hover{
+    background: green;
+}
+
+.btn__default:hover{
+    background: green;
+}
+.btn32{
+    width: 385px;
+}
+.btn8{
+    width: 100px;
+}
+.btn43{
+    width: 100px;
+}
+.btn16{
+    width: 100px;
+}
+.btn-16{
+    width: 100px;
+}
+.btn13{
+    width: 100px;
+}
+.btn17{
+    width: 65px;
+}
+.btn46{
+    width: 100px;
+}
+.btn9{
+    width:100px
+}
+.btn20{
+    width:100px
+}
+.btn192{
+    margin-right: 55px;
+}
+
+p{
+    text-align: center;
+    font-size: 26px;
+}
